@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>금융이 알고 싶을 때, 토스피드</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1><a href="/">toss feed</a></h1>
-      <nav>
-        <ul>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
           <li><a href="#">토스피드 에디션</a></li>
           <li><a href="#">금융의 모든 것</a></li>
           <li><a href="#">토스의 모든 것</a></li>
@@ -19,31 +19,33 @@
       </nav>
       <button aria-label="검색">🔍</button>
     </header>
-    <main>
-      <aside aria-label="오늘의 시리즈">
-        <h2>오늘의 시리즈</h2>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-      </aside>
-      <section aria-label="방금 올라온 아티클">
-        <h2>방금 올라온 아티클</h2>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-      </section>
-      <aside aria-label="오늘의 작가">
-        <h2>오늘의 작가</h2>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-      </aside>
+    <main class="main">
+      <div class="main__layout">
+        <aside class="main__series" aria-label="오늘의 시리즈">
+          <h2>오늘의 시리즈</h2>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </aside>
+        <section class="main__articles" aria-label="방금 올라온 아티클">
+          <h2>방금 올라온 아티클</h2>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </section>
+        <aside class="main__authors" aria-label="오늘의 작가">
+          <h2>오늘의 작가</h2>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </aside>
+      </div>
     </main>
     <footer>
       <address>(주)비바리퍼블리카</address>

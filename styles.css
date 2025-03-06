@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+:root {
+  --header-height: 60px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: var(--header-height);
+}
+
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main__layout {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+}
+
+.main__series,
+.main__authors {
+  min-width: 235px;
+  max-width: 285px;
+}
+
+.main__articles {
+  min-width: 365px;
+  max-width: 670px;
+  flex: 1;
+}
