@@ -3,38 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>금융이 알고 싶을 때, 토스피드</title>
   </head>
   <body>
     <header class="header">
-      <h1><a href="/">toss feed</a></h1>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a href="#">토스피드 에디션</a></li>
-          <li><a href="#">금융의 모든 것</a></li>
-          <li><a href="#">토스의 모든 것</a></li>
-          <li><a href="#">금융 계산기</a></li>
-        </ul>
-      </nav>
-      <button aria-label="검색">🔍</button>
+      <div class="header__content">
+        <h1 class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img
+              src="/assets/images/logo.png"
+              alt="로고"
+              class="header__logo-image"
+            />
+            <span class="sr-only">로고</span>
+          </a>
+        </h1>
+        <div class="header__menu-group">
+          <nav class="header__nav" aria-label="메인 메뉴">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">토스피드 에디션</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">금융의 모든 것</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">토스의 모든 것</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">금융 계산기</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__search" aria-label="검색">
+            <img
+              src="/assets/icons/search.svg"
+              alt="검색 아이콘"
+              class="header__search-icon"
+            />
+          </button>
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="main__layout">
         <aside class="main__series" aria-label="오늘의 시리즈">
-          <h2>오늘의 시리즈</h2>
-          <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+          <h2 class="series__heading">오늘의 시리즈</h2>
+          <ul class="series">
+            <li class="series__item">
+              <a href="#" class="series__link">
+                <img
+                  src="https://placehold.co/285x285"
+                  alt="시리즈 썸네일"
+                  class="series__image"
+                />
+                <span class="series__label">Series</span>
+                <h3 class="series__title">시리즈 제목</h3>
+                <p class="series__count">아티클 개수</p>
+              </a>
+            </li>
           </ul>
         </aside>
         <section class="main__articles" aria-label="방금 올라온 아티클">
-          <h2>방금 올라온 아티클</h2>
-          <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+          <h2 class="articles__heading">방금 올라온 아티클</h2>
+          <ul class="articles">
+            <li class="articles__item">
+              <a href="#" class="articles__link">
+                <img
+                  src="https://placehold.co/670x450"
+                  alt="아티클 썸네일"
+                  class="articles__image"
+                />
+                <span class="articles__category">카테고리</span>
+                <h3 class="articles__title">아티클 제목</h3>
+                <p class="articles__description">아티클 설명</p>
+                <time class="articles__date">2025.03.06</time>
+              </a>
+            </li>
           </ul>
         </section>
         <aside class="main__authors" aria-label="오늘의 작가">
