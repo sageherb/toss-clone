@@ -119,6 +119,20 @@ main {
   width: 100%;
   max-width: 1500px;
   display: flex;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8b95a1;
+  margin-bottom: 20px;
+}
+
+.main__series,
+.main__articles,
+.main__authors {
+  margin: 80px 30px;
 }
 
 .main__series,
@@ -130,16 +144,52 @@ main {
 .main__articles {
   min-width: 365px;
   max-width: 670px;
-  flex: 1;
 }
 
 .articles__link {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
+}
+
+.articles__image,
+.series__image,
+.authors__image {
+  border-radius: 10px;
 }
 
 .articles__image {
   width: 670px;
   height: 450px;
+  margin-bottom: 20px;
+}
+
+.articles__category {
+  font-size: 15px;
+  color: #8b95a1;
+}
+
+.articles__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #333d4b;
+}
+
+.articles__title:hover {
+  color: #3182f6;
+}
+
+.articles__description {
+  font-size: 16px;
+  color: #8b95a1;
+}
+
+.articles__date {
+  color: #8b95a1;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
 }
